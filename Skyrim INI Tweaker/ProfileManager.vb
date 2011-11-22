@@ -48,6 +48,8 @@ Public Class ProfileManager
                 File.Copy(SkyrimSettingsFolder & "Skyrim.ini", INITweakerProfileDir & NewProfileName & "Skyrim.ini")
                 File.Copy(SkyrimSettingsFolder & "SkyrimPrefs.ini", INITweakerProfileDir & NewProfileName & "SkyrimPrefs.ini")
                 GetProfiles()
+                Dim CurrentProfile As String = TweakerINI.GetKeyValue("General", "Profile")
+                cmb_ProfileList.SelectedItem = CurrentProfile
             End If
         End If
     End Sub
@@ -66,15 +68,19 @@ Public Class ProfileManager
             File.Delete(INITweakerProfileDir & cmb_ProfileList.SelectedItem & "\SkyrimPrefs.ini")
             Directory.Delete(INITweakerProfileDir & cmb_ProfileList.SelectedItem)
             GetProfiles()
+            Dim CurrentProfile As String = TweakerINI.GetKeyValue("General", "Profile")
+            cmb_ProfileList.SelectedItem = CurrentProfile
         End If
     End Sub
 
     Private Sub cmb_ProfileList_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmb_ProfileList.SelectedValueChanged
         Dim CurrentProfile As String = TweakerINI.GetKeyValue("General", "Profile")
-        If cmb_ProfileList.SelectedItem = "Default" Then
+        If cmb_ProfileList.SelectedItem = CurrentProfile Then
             CriticalButtonsEnabled(False)
-        ElseIf cmb_ProfileList.SelectedItem = CurrentProfile Then
-            CriticalButtonsEnabled(False)
+        ElseIf cmb_ProfileList.SelectedItem = "Default" Then
+            btn_SelectProfile.Enabled = True
+            btn_RenameProfile.Enabled = False
+            btn_DeleteProfile.Enabled = False
         Else
             CriticalButtonsEnabled(True)
         End If
