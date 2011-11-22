@@ -1,6 +1,6 @@
 ﻿Public Class ProfileManager_New
     Private Sub btn_CreateProfile_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_CreateProfile.Click
-        ProfileManager.NewProfileName = txt_ProfileName.Text & "\"
+        ProfileManager.MakeProfile(txt_ProfileName.Text)
         Me.Close()
     End Sub
 
@@ -9,6 +9,7 @@
     End Sub
 
     Private Sub ProfileManager_New_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        ProfileManager.NewProfileName = Nothing
         AcceptButton = btn_CreateProfile
     End Sub
 End Class

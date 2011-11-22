@@ -1,8 +1,8 @@
 ﻿Imports System.IO
+Imports System.Text.RegularExpressions
 
 Public Class ProfileManager
     Public NewProfileName As String
-
     Private Sub GetProfiles()
         Dim dirs As DirectoryInfo() = New DirectoryInfo(INITweakerProfileDir).GetDirectories
         Dim Profile
@@ -40,13 +40,20 @@ Public Class ProfileManager
 
     Private Sub btn_NewProfile_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_NewProfile.Click
         ProfileManager_New.ShowDialog()
-        If NewProfileName IsNot Nothing Then
+    End Sub
+
+    Public Sub MakeProfile(ByVal NewProfileName As String)
+        If NewProfileName = "" Then
+            MsgBox("You must enter a name!", MsgBoxStyle.Exclamation)
+        Else
             If Directory.Exists(INITweakerProfileDir & NewProfileName) Then
                 MsgBox("This profile already exists, choose another name.", MsgBoxStyle.Exclamation)
+            ElseIf Regex.IsMatch(NewProfileName, "[(?*"",\\<>&#~%{}+_.@:\/!;]+") Then
+                MsgBox("Invalid characters!", MsgBoxStyle.Exclamation)
             Else
                 Directory.CreateDirectory(INITweakerProfileDir & NewProfileName)
-                File.Copy(SkyrimSettingsFolder & "Skyrim.ini", INITweakerProfileDir & NewProfileName & "Skyrim.ini")
-                File.Copy(SkyrimSettingsFolder & "SkyrimPrefs.ini", INITweakerProfileDir & NewProfileName & "SkyrimPrefs.ini")
+                File.Copy(SkyrimSettingsFolder & "Skyrim.ini", INITweakerProfileDir & NewProfileName & "\Skyrim.ini")
+                File.Copy(SkyrimSettingsFolder & "SkyrimPrefs.ini", INITweakerProfileDir & NewProfileName & "\SkyrimPrefs.ini")
                 GetProfiles()
                 Dim CurrentProfile As String = TweakerINI.GetKeyValue("General", "Profile")
                 cmb_ProfileList.SelectedItem = CurrentProfile
