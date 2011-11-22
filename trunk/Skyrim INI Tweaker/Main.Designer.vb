@@ -198,6 +198,7 @@ Partial Class Main
         Me.btn_Apply = New System.Windows.Forms.Button()
         Me.btn_Reload = New System.Windows.Forms.Button()
         Me.StatusMessage = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btn_ProfileManager = New System.Windows.Forms.Button()
         Me.tab_Credits.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.tab_General.SuspendLayout()
@@ -2157,11 +2158,21 @@ Partial Class Main
         Me.StatusMessage.UseAnimation = False
         Me.StatusMessage.UseFading = False
         '
+        'btn_ProfileManager
+        '
+        Me.btn_ProfileManager.Location = New System.Drawing.Point(173, 512)
+        Me.btn_ProfileManager.Name = "btn_ProfileManager"
+        Me.btn_ProfileManager.Size = New System.Drawing.Size(114, 28)
+        Me.btn_ProfileManager.TabIndex = 15
+        Me.btn_ProfileManager.Text = "Profile Manager"
+        Me.btn_ProfileManager.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 545)
+        Me.Controls.Add(Me.btn_ProfileManager)
         Me.Controls.Add(Me.btn_Apply)
         Me.Controls.Add(Me.btn_Reload)
         Me.Controls.Add(Me.TabControl1)
@@ -2426,5 +2437,6 @@ Partial Class Main
     Friend WithEvents PictureBox41 As System.Windows.Forms.PictureBox
     Friend WithEvents chk_iPresentInterval As System.Windows.Forms.CheckBox
     Friend WithEvents StatusMessage As System.Windows.Forms.ToolTip
+    Friend WithEvents btn_ProfileManager As System.Windows.Forms.Button
 
 End Class

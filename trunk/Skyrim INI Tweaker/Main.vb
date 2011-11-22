@@ -1,8 +1,18 @@
 ﻿Imports System.IO
-Imports System.Math
 Imports System.Environment
 Imports System.Diagnostics.Process
-Imports System.Windows.Forms
+
+Module Constructor
+    Dim Documents As String = GetFolderPath(SpecialFolder.MyDocuments)
+    Public SkyrimSettingsFolder As String = Documents & "\My Games\Skyrim\"
+    Public INITweakerDir As String = SkyrimSettingsFolder & "INITweaker\"
+    Public INITweakerProfileDir As String = INITweakerDir & "Profiles\"
+    Public INITweakerSettings As String = INITweakerDir & "INITweaker.ini"
+
+    Public SkyrimINI As New IniFile
+    Public SkyrimPrefsINI As New IniFile
+    Public TweakerINI As New IniFile
+End Module
 
 Public Class Main
     ' Initial load
@@ -10,7 +20,37 @@ Public Class Main
         Dim BuildInfo As FileVersionInfo = FileVersionInfo.GetVersionInfo(Application.ExecutablePath)
         txtVersion.Text = "Version: " & BuildInfo.ProductVersion
 
+        CreateInitialDirectories()
+        CreateInitialINI()
         LoadInfo.All()
+
+        ' Input checks
+        ' Display tab
+        AddHandler txt_iSizeW.TextChanged, AddressOf SanityChecks.CheckInput
+        AddHandler txt_iSizeH.TextChanged, AddressOf SanityChecks.CheckInput
+        AddHandler txt_iShadowMapResolution.TextChanged, AddressOf SanityChecks.CheckInput
+        AddHandler txt_iShadowMapResolutionPrimary.TextChanged, AddressOf SanityChecks.CheckInput
+        AddHandler txt_iShadowMapResolutionSecondary.TextChanged, AddressOf SanityChecks.CheckInput
+        AddHandler txt_fShadowDistance.TextChanged, AddressOf SanityChecks.CheckInput
+        AddHandler txt_fInteriorShadowDistance.TextChanged, AddressOf SanityChecks.CheckInput
+    End Sub
+
+    ' Initial INITweaker directory creation
+    Private Sub CreateInitialDirectories()
+        If Directory.Exists(INITweakerDir) = False Then
+            Directory.CreateDirectory(INITweakerDir)
+        End If
+        If Directory.Exists(INITweakerProfileDir) = False Then
+            Directory.CreateDirectory(INITweakerProfileDir)
+        End If
+    End Sub
+
+    ' Initial INITweaker.ini creation
+    Private Sub CreateInitialINI()
+        If File.Exists(INITweakerSettings) = False Then
+            TweakerINI.SetKeyValue("General", "Profile", "")
+            TweakerINI.Save(INITweakerSettings)
+        End If
     End Sub
 
     ' VSync toggle warning
@@ -24,18 +64,6 @@ Public Class Main
                 chk_iPresentInterval.Checked = True
             End If
         End If
-    End Sub
-
-    ' Input checks
-    Private Sub Main_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.TextChanged
-        ' Display tab
-        AddHandler txt_iSizeW.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iSizeH.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iShadowMapResolution.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iShadowMapResolutionPrimary.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iShadowMapResolutionSecondary.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_fShadowDistance.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_fInteriorShadowDistance.TextChanged, AddressOf SanityChecks.CheckInput
     End Sub
 
     ' Button - Apply
@@ -63,5 +91,9 @@ Public Class Main
     ' PyroNetwork link
     Private Sub lnkPyroNetwork_LinkClicked(ByVal sender As System.Object, ByVal e As LinkLabelLinkClickedEventArgs) Handles lnkPyroNetwork.LinkClicked
         Start("http://pyronet.tv")
+    End Sub
+
+    Private Sub btn_ProfileManager_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_ProfileManager.Click
+        ProfileManager.ShowDialog()
     End Sub
 End Class

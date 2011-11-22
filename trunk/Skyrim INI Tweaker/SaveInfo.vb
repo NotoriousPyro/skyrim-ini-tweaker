@@ -9,8 +9,8 @@
             AdvancedTabSave()
 
             ' Save the files
-            CheckFileExists("Skyrim.ini")
-            CheckFileExists("SkyrimPrefs.ini")
+            CheckDefaultINI("Skyrim.ini")
+            CheckDefaultINI("SkyrimPrefs.ini")
             SkyrimINI.Save(SkyrimSettingsFolder & "Skyrim.ini")
             SkyrimPrefsINI.Save(SkyrimSettingsFolder & "SkyrimPrefs.ini")
             Return True

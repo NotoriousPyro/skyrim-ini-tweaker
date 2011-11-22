@@ -1,18 +1,12 @@
 ﻿Imports System.IO
-Imports System.Environment
 
 Module SanityChecks
-    Dim Documents As String = GetFolderPath(SpecialFolder.MyDocuments)
-    Public SkyrimSettingsFolder As String = Documents & "\My Games\Skyrim\"
-    Public SkyrimINI As New IniFile
-    Public SkyrimPrefsINI As New IniFile
-
-    Public Sub CheckFileExists(ByVal FileName As String)
+    Public Sub CheckDefaultINI(ByVal FileName As String)
         If File.Exists(SkyrimSettingsFolder & FileName) = False Then
             MsgBox(FileName & " not found in " & SkyrimSettingsFolder & _
-                   ControlChars.NewLine & _
-                   ControlChars.NewLine & _
-                   "Please ensure you've run the game at least once.")
+                ControlChars.NewLine & _
+                ControlChars.NewLine & _
+                "Please ensure you've run the game at least once.", MsgBoxStyle.Critical)
             End
         End If
     End Sub

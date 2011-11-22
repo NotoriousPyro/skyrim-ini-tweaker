@@ -16,3 +16,23 @@ s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\o
 s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.application
 s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.Main.resources
 s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.SplashScreen.resources
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\bin\Debug\Skyrim INI Tweaker.exe.config
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\bin\Debug\Skyrim INI Tweaker.exe.manifest
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\bin\Debug\Skyrim INI Tweaker.application
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\bin\Debug\Skyrim INI Tweaker.exe
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\bin\Debug\Skyrim INI Tweaker.pdb
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\bin\Debug\Skyrim INI Tweaker.xml
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\ResolveAssemblyReference.cache
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.Main.resources
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.Resources.resources
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.SplashScreen.resources
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\GenerateResource.read.1.tlog
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\GenerateResource.write.1.tlog
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.TrustInfo.xml
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.exe.manifest
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.application
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.exe
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.xml
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.pdb
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.ProfileManager.resources
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.ProfileManager_New.resources
