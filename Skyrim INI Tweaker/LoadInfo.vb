@@ -3,8 +3,8 @@
     Public Function All()
         Try
             ' Check the file exists and load it
-            CheckFileExists("Skyrim.ini")
-            CheckFileExists("SkyrimPrefs.ini")
+            CheckDefaultINI("Skyrim.ini")
+            CheckDefaultINI("SkyrimPrefs.ini")
             SkyrimINI.Load(SkyrimSettingsFolder & "Skyrim.ini")
             SkyrimPrefsINI.Load(SkyrimSettingsFolder & "SkyrimPrefs.ini")
 

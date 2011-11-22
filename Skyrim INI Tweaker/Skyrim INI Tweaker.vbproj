@@ -123,6 +123,18 @@
     </Compile>
     <Compile Include="IniFile.vb" />
     <Compile Include="LoadInfo.vb" />
+    <Compile Include="ProfileManager.Designer.vb">
+      <DependentUpon>ProfileManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileManager_New.Designer.vb">
+      <DependentUpon>ProfileManager_New.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileManager_New.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SaveInfo.vb" />
     <Compile Include="SanityChecks.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -156,6 +168,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileManager.resx">
+      <DependentUpon>ProfileManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileManager_New.resx">
+      <DependentUpon>ProfileManager_New.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>

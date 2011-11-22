@@ -4,7 +4,7 @@
   <description asmv2:iconFile="TESV_101.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Skyrim INI Tweaker" version="1.0.4343.20146" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="Skyrim INI Tweaker" version="1.0.4343.22687" language="neutral" processorArchitecture="x86" />
     <commandLine file="Skyrim INI Tweaker.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Skyrim INI Tweaker.exe" size="1274880">
-      <assemblyIdentity name="Skyrim INI Tweaker" version="1.0.4343.20146" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Skyrim INI Tweaker.exe" size="1284096">
+      <assemblyIdentity name="Skyrim INI Tweaker" version="1.0.4343.22687" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>olBPcoKVOy2m9K7o0J3/lCuWBdU=</dsig:DigestValue>
+        <dsig:DigestValue>FFfx0FjPiTFyhimDQ2AaS5YZwEg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
