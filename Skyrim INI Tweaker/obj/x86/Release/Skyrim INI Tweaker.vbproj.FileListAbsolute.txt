@@ -1,0 +1,18 @@
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\bin\Release\Skyrim INI Tweaker.exe.config
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\bin\Release\Skyrim INI Tweaker.exe.manifest
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\bin\Release\Skyrim INI Tweaker.application
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\bin\Release\Skyrim INI Tweaker.exe
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\bin\Release\Skyrim INI Tweaker.pdb
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\bin\Release\Skyrim INI Tweaker.xml
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\ResolveAssemblyReference.cache
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim_INI_Tweaker.Main.resources
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim_INI_Tweaker.Resources.resources
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\GenerateResource.read.1.tlog
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\GenerateResource.write.1.tlog
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim INI Tweaker.TrustInfo.xml
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim INI Tweaker.exe.manifest
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim INI Tweaker.application
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim INI Tweaker.exe
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim INI Tweaker.xml
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim INI Tweaker.pdb
+s:\documents\visual studio 2010\Projects\Skyrim INI Tweaker\Skyrim INI Tweaker\obj\x86\Release\Skyrim_INI_Tweaker.SplashScreen.resources
