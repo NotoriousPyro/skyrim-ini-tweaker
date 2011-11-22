@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.47" name="Skyrim INI Tweaker.exe" publicKeyToken="f898000014dd7369" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="TESV_101.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Skyrim INI Tweaker" version="1.0.4343.20146" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Skyrim INI Tweaker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Skyrim INI Tweaker.exe" size="1274880">
+      <assemblyIdentity name="Skyrim INI Tweaker" version="1.0.4343.20146" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>vOKgqwL+D7jvKO/fj3jupj5cncQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Skyrim INI Tweaker.exe.config" size="1319">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>84C5PgtM76tg05GJOSWZEhXHiKU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TESV_101.ico" size="371894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4V+m3psBIAWKGHbbbDoizMbaydU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=GAMINGPC\Craig" issuerKeyHash="64f414fd85823217144e7fe479fdd26cd32d1255" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lSSTdmFd7DfiAGGqF+DRLLBaY7Q=</DigestValue></Reference></SignedInfo><SignatureValue>aLB1sWEYZd/gvc4CiK03mxEWzM3gOC7fK4S6Wr9m5C83XmZ6Y4mkzmLaL5J1KXTsKynz2eFWR3u/yRcXBfUG+2n5hH6PHrOklFZFPPJyC6e44yZAxqlg3sfiNYSTSZaHwo3ESzC7OyJAdnPauBCfl+3tirtnnRxrtsT0Z6Ef7Qo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2HolHqOr0JhWbxv4ljp/sig3jJmT3f8Wo8YTrruO95roWK0hW1NK71QNbITaLw8oU1bFHKXOuGVNr/obJCRKxeE9pD4xja/8H1UYAVtM7GRkIeA0v6beRsI5UcXi7jj/jmzfi3xaLViNQEKxYftZFJQERAMT2prxbDPGnqMHwS8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b4635ab02cd1e017aa6100e237ec5d6176932495" Description="" Url=""><as:assemblyIdentity version="1.0.0.47" name="Skyrim INI Tweaker.exe" publicKeyToken="f898000014dd7369" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GAMINGPC\Craig</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>guNG2y5OhDP7yVwLjz8j5Sobt/Q=</DigestValue></Reference></SignedInfo><SignatureValue>pfe8KYf0D6QWAi/C2/1/75n3wvQSsWXn6hb778dkWrlJwVNcvw5UfFonYfWpeTnWzZXjFz4utWwkgt+sXbAmHzKmQFi4ZBF6wRi7BZ0kMROhkwnLFJygkITxmgjRK/zWBKhKXRSynodCtSmPR/0Dzwd5GOhK88o7c3tPnvBmgwQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2HolHqOr0JhWbxv4ljp/sig3jJmT3f8Wo8YTrruO95roWK0hW1NK71QNbITaLw8oU1bFHKXOuGVNr/obJCRKxeE9pD4xja/8H1UYAVtM7GRkIeA0v6beRsI5UcXi7jj/jmzfi3xaLViNQEKxYftZFJQERAMT2prxbDPGnqMHwS8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQIGSza/Y+a55HD1BLQ7N4DjANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwARwBBAE0ASQBOAEcAUABDAFwAQwByAGEAaQBnMB4XDTExMTExNjIxNTIyNFoXDTEyMTExNjAzNTIyNFowJzElMCMGA1UEAx4cAEcAQQBNAEkATgBHAFAAQwBcAEMAcgBhAGkAZzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2HolHqOr0JhWbxv4ljp/sig3jJmT3f8Wo8YTrruO95roWK0hW1NK71QNbITaLw8oU1bFHKXOuGVNr/obJCRKxeE9pD4xja/8H1UYAVtM7GRkIeA0v6beRsI5UcXi7jj/jmzfi3xaLViNQEKxYftZFJQERAMT2prxbDPGnqMHwS8CAwEAATANBgkqhkiG9w0BAQUFAAOBgQAYUfZDfaGk2vaM2y5IVdVvlbwI/opxBuOuJAjfWf/x5EbLPwRoNK0CaSy1yiKn1i2FWSMnFFBm5KwIqrp4QZvPKU7/PLTu9orbl+Cdkne1wQHvk4vmLqUIlnXvSyWbrmgnC3/rh4zcL1UKbludH+NYuE/+20ef7U8W7SC/U14djw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
