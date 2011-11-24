@@ -1,11 +1,11 @@
 ﻿Public Class ProfileManager_New
     Private Sub btn_CreateProfile_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_CreateProfile.Click
-        ProfileManager.MakeProfile(txt_ProfileName.Text)
-        Me.Close()
+        ProfileManager.NewProfile(txt_ProfileName.Text)
+        Close()
     End Sub
 
     Private Sub btn_CancelCreateProfile_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_CancelCreateProfile.Click
-        Me.Close()
+        Close()
     End Sub
 
     Private Sub ProfileManager_New_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

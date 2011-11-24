@@ -36,3 +36,4 @@ S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x8
 S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim INI Tweaker.pdb
 S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.ProfileManager.resources
 S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.ProfileManager_New.resources
+S:\Documents\Visual Studio 2010\SVN\skyrim-ini-tweaker\Skyrim INI Tweaker\obj\x86\Debug\Skyrim_INI_Tweaker.ProfileManager_Rename.resources
