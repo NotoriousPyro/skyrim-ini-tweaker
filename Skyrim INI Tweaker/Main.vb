@@ -23,7 +23,18 @@ Public Class Main
         CreateInitialDirectories()
         CreateInitialINI()
         LoadInfo.All()
+        CreateBackup()
         InputChecks.All()
+    End Sub
+
+    ' Create backup
+    Private Sub CreateBackup()
+        If File.Exists(SkyrimSettingsFolder & "Skyrim.ini.backup") = False Then
+            File.Copy(SkyrimSettingsFolder & "Skyrim.ini", SkyrimSettingsFolder & "Skyrim.ini.backup")
+        End If
+        If File.Exists(SkyrimSettingsFolder & "SkyrimPrefs.ini.backup") = False Then
+            File.Copy(SkyrimSettingsFolder & "SkyrimPrefs.ini", SkyrimSettingsFolder & "SkyrimPrefs.ini.backup")
+        End If
     End Sub
 
     ' Initial INITweaker directory creation
