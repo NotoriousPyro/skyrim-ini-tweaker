@@ -15,7 +15,7 @@ Module Constructor
 End Module
 
 Public Class Main
-    ' Initial load
+    ' Startup event
     Private Sub Main_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Dim BuildInfo As FileVersionInfo = FileVersionInfo.GetVersionInfo(Application.ExecutablePath)
         txtVersion.Text = "Version: " & BuildInfo.ProductVersion
@@ -23,16 +23,7 @@ Public Class Main
         CreateInitialDirectories()
         CreateInitialINI()
         LoadInfo.All()
-
-        ' Input checks
-        ' Display tab
-        AddHandler txt_iSizeW.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iSizeH.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iShadowMapResolution.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iShadowMapResolutionPrimary.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_iShadowMapResolutionSecondary.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_fShadowDistance.TextChanged, AddressOf SanityChecks.CheckInput
-        AddHandler txt_fInteriorShadowDistance.TextChanged, AddressOf SanityChecks.CheckInput
+        InputChecks.All()
     End Sub
 
     ' Initial INITweaker directory creation
@@ -48,7 +39,7 @@ Public Class Main
     ' Initial INITweaker.ini creation
     Private Sub CreateInitialINI()
         If File.Exists(INITweakerSettings) = False Then
-            TweakerINI.SetKeyValue("General", "Profile", "")
+            TweakerINI.SetKeyValue("General", "Profile", "Default")
             TweakerINI.Save(INITweakerSettings)
         End If
     End Sub

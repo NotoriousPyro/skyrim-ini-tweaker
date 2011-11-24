@@ -135,6 +135,12 @@
     <Compile Include="ProfileManager_New.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ProfileManager_Rename.Designer.vb">
+      <DependentUpon>ProfileManager_Rename.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileManager_Rename.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SaveInfo.vb" />
     <Compile Include="SanityChecks.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileManager_New.resx">
       <DependentUpon>ProfileManager_New.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileManager_Rename.resx">
+      <DependentUpon>ProfileManager_Rename.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
